@@ -1,14 +1,32 @@
+忍我弟很久了，每次出房間都不關門。開冷氣開個幾秒整個房間就熱起來了，真的是受不了，因此做了這個專案。
 
-> 在 [https://edit-mr.github.io/pls-close-the-door/](https://edit-mr.github.io/pls-close-the-door/) 打開此頁面
+## 使用方式
 
-## 作為擴充功能使用
+把閒在箱子裡的 micro:bit 拿出來玩玩，會以開機時的距離當作是關門時的距離。只要距離超過五公分，也就是當門被打開時超過五秒就會開始逼逼叫，直到關門為止。
 
-可以在 MakeCode 中將此儲存庫新增為**擴充功能**。
+### 重設距離
 
-* 開啟 [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* 按一下**新專案**
-* 按一下工具齒輪選單下的**擴充功能**
-* 搜索 **https://github.com/edit-mr/pls-close-the-door** 並匯出
+點擊 A 或是 reset 鍵即可重新綁定關門距離。
+
+
+
+## 材料
+
+* micro:bit (一二代皆可)
+* HC-SR04 超聲波測距模組
+* 一顆蜂鳴器 (可以吵到讓人不得不回來關門，永生難忘那種)。
+## 接線
+
+* HC-SR04
+  * `ECHO` - `P1`
+  * `TRI`G - `P2`
+  * `VCC` - `3V`
+  * `GND` - `GND`
+* 蜂鳴器
+  * `+` - P0
+  * `-` - GND
+
+
 
 ## 編輯此專案
 
